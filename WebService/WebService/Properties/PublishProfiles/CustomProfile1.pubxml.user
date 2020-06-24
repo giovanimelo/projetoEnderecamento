@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>
+    </EncryptedPassword>
+    <_PublishTargetUrl>ftp://plesk20.nspmanaged.com/projetointegradorbsi.biz</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>03/15/2020 11:13:59</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>03/15/2020 11:13:58</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>03/15/2020 11:13:58</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
+      <publishTime>03/15/2020 11:13:58</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
+      <publishTime>03/15/2020 11:13:58</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>03/15/2020 11:13:57</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>03/15/2020 11:13:47</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Crypto.dll">
+      <publishTime>08/11/2018 10:03:48</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/16/2019 03:00:22</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/16/2019 03:00:40</publishTime>
+    </File>
+    <File Include="bin/Google.Protobuf.dll">
+      <publishTime>08/10/2018 18:51:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>12/03/2019 09:13:44</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Net.Http.Formatting.resources.dll">
+      <publishTime>11/28/2018 13:00:54</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Helpers.resources.dll">
+      <publishTime>11/28/2018 13:04:44</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Http.resources.dll">
+      <publishTime>11/28/2018 13:01:22</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Http.WebHost.resources.dll">
+      <publishTime>11/28/2018 13:03:12</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Mvc.resources.dll">
+      <publishTime>11/28/2018 13:00:08</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 15:28:42</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Razor.resources.dll">
+      <publishTime>11/28/2018 13:00:30</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>11/28/2018 13:04:44</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>11/28/2018 13:04:44</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.resources.dll">
+      <publishTime>11/28/2018 13:04:44</publishTime>
+    </File>
+    <File Include="bin/Renci.SshNet.dll">
+      <publishTime>10/16/2017 20:53:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/28/2018 14:00:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 14:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/28/2018 14:01:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/28/2018 14:02:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/28/2018 13:59:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 16:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 14:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/28/2018 14:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/28/2018 14:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/28/2018 14:04:24</publishTime>
+    </File>
+    <File Include="bin/Ubiety.Dns.Core.dll">
+      <publishTime>04/01/2020 20:18:04</publishTime>
+    </File>
+    <File Include="bin/Ubiety.Logging.Core.dll">
+      <publishTime>04/01/2020 20:03:58</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 14:57:34</publishTime>
+    </File>
+    <File Include="bin/WebService.dll">
+      <publishTime>05/03/2020 16:06:47</publishTime>
+    </File>
+    <File Include="bin/WebService.pdb">
+      <publishTime>05/03/2020 16:06:47</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/.bower.json">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/bower.json">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/CONTRIBUTING.md">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css.map">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css.map">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/img/bootstrap-colorpicker/alpha-horizontal.png">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/img/bootstrap-colorpicker/alpha.png">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/img/bootstrap-colorpicker/hue-horizontal.png">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/img/bootstrap-colorpicker/hue.png">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/img/bootstrap-colorpicker/saturation.png">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/docs/assets/main.css">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/docs/helpers/code/index.js">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/docs/includes/api.hbs">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/docs/includes/example.hbs">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/docs/layout.hbs">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/LICENSE">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/README.md">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap-colorpicker/serve.js">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/.bower.json">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/bower.json">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/CHANGELOG.md">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/css/bootstrap-theme.css.map">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/css/bootstrap.css">
+      <publishTime>04/19/2019 00:03:49</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/17/2019 19:35:01</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/js/bootstrap.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/dist/js/npm.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/Gemfile">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/Gemfile.lock">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/.jshintrc">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/bs-commonjs-generator.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/bs-lessdoc-parser.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/bs-raw-files-generator.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/change-version.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/configBridge.json">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/npm-shrinkwrap.json">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/grunt/sauce_browsers.yml">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/Gruntfile.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/ISSUE_TEMPLATE.md">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/.jscsrc">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/.jshintrc">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/affix.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/alert.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/button.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/carousel.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/collapse.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/dropdown.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/modal.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/popover.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/scrollspy.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/tab.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/tooltip.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/js/transition.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/.csscomb.json">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/.csslintrc">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/alerts.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/badges.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/bootstrap.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/breadcrumbs.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/button-groups.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/buttons.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/carousel.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/close.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/code.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/component-animations.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/dropdowns.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/forms.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/glyphicons.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/grid.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/input-groups.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/jumbotron.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/labels.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/list-group.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/media.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/alerts.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/background-variant.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/border-radius.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/buttons.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/center-block.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/clearfix.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/forms.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/gradients.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/grid-framework.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/grid.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/hide-text.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/image.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/labels.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/list-group.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/nav-divider.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/nav-vertical-align.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/opacity.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/pagination.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/panels.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/progress-bar.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/reset-filter.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/reset-text.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/resize.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/responsive-visibility.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/size.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/tab-focus.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/table-row.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/text-emphasis.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/text-overflow.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/mixins/vendor-prefixes.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/modals.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/navbar.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/navs.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/normalize.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/pager.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/pagination.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/panels.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/popovers.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/print.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/progress-bars.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/responsive-embed.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/responsive-utilities.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/scaffolding.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/tables.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/theme.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/thumbnails.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/tooltip.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/type.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/utilities.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/variables.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/less/wells.less">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/LICENSE">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/nuget/bootstrap.less.nuspec">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/nuget/bootstrap.nuspec">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/nuget/MyGet.ps1">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/package.js">
+      <publishTime>04/17/2019 19:35:02</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/package.json">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/bower_components/bootstrap/README.md">
+      <publishTime>04/17/2019 19:35:03</publishTime>
+    </File>
+    <File Include="Content/jquery.bootgrid.css">
+      <publishTime>04/19/2019 14:12:03</publishTime>
+    </File>
+    <File Include="Content/jquery.bootgrid.fa.js">
+      <publishTime>04/17/2019 22:20:33</publishTime>
+    </File>
+    <File Include="Content/jquery.bootgrid.fa.min.js">
+      <publishTime>04/17/2019 22:20:33</publishTime>
+    </File>
+    <File Include="Content/jquery.bootgrid.js">
+      <publishTime>04/17/2019 22:20:33</publishTime>
+    </File>
+    <File Include="Content/jquery.bootgrid.min.css">
+      <publishTime>04/19/2019 14:12:04</publishTime>
+    </File>
+    <File Include="Content/jquery.bootgrid.min.js">
+      <publishTime>04/17/2019 22:20:33</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>04/17/2019 19:35:37</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>03/15/2020 11:13:47</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/15/2020 11:13:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/03/2020 16:07:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<WebService.Models.Led>
+
+@{
+
+    Layout = "~/Views/Shared/_mainView.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <div class="form-horizontal">
+                            <h4 class="box-title">Leds</h4>
+                            @*<h3>
+                                @Html.ActionLink("Adicionar novo", "Create", "Rua", new { @class = "btn btn-success" })
+                            </h3>*@
+                            <div class="box-body">
+                                <table id="TabelaUsuarios" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                @Html.DisplayNameFor(model => model.numero)
+                                            </th>
+                                        </tr>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>@Html.DisplayFor(modelItem => item.numero)</td>
+                                                <td>
+                                                   
+                                                    @*@Html.ActionLink("Excluir", "Delete", new { id = item.id_led }, new { @class = "btn btn-danger" })*@
+                                                </td>
+                                            </tr>
+                                        }
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+@*@section Scripts {
+        <script>
+            $(document).ready(function () {
+                $('#TabelaUsuarios').DataTable({
+                    "language": {
+                        "search": "Procurar",
+                        "paginate": { "previous": "Anterior", "next": "Próximo" },
+                        "info": "Exibindo página _PAGE_ de _PAGES_",
+                    },
+                    'paging': true,
+                    'lengthChange': false,
+                    'ordering': true,
+                    'info': true,
+                    'autoWidth': false,
+                    "ajax": {
+                        "url": "/usuarios/Listar",
+                        "type": "GET",
+                        "datatype": "json"
+                    },
+                    "columns": [
+                        { "data": "id_usuario" },
+                        { "data": "no_nome" },
+                        { "data": "no_sexo" },
+                        { "data": "no_email" },
+                        { "data": "num_telefone" },
+
+
+                    ]
+
+                });
+            });
+        </script>
+    }*@

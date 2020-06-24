@@ -1,0 +1,96 @@
+﻿
+@model IEnumerable<WebService.Models.EnderecamentoAPI>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_mainView.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+
+                    <div class="box-header">
+                        <div class="form-horizontal">
+                            <div class="box-body">
+                                <h2 class="text-center">
+                                    LISTA DE ENDEREÇAMENTOS
+                                </h2>
+                                <table id="tabelaPadrao" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-md-2">
+                                                @Html.DisplayNameFor(model => model.descricao_produto)
+                                            </th>
+                                            <th class="col-md-2">
+                                                @Html.DisplayNameFor(model => model.descricao_rua)
+                                            </th>
+                                            <th class="col-md-2">
+                                                @Html.DisplayNameFor(model => model.descricao_column)
+                                            </th>
+                                            <th class="col-md-2">
+                                                @Html.DisplayNameFor(model => model.descricao_nivel)
+                                            </th>
+                                            <th class="col-md-2">
+                                                @Html.DisplayNameFor(model => model.descricao_endereco)
+                                            </th>
+                                            <th class="col-md-2">
+                                                @Html.DisplayNameFor(model => model.quantidade)
+                                            </th>
+                                            <th class="col-md-2">
+                                                @Html.DisplayNameFor(model => model.vencimento)
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!-- /.box -->
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#tabelaPadrao').DataTable({
+                "language": {
+                    "search": "Procurar",
+                    "paginate": { "previous": "Anterior", "next": "Próximo" },
+                    "info": "Exibindo página _PAGE_ de _PAGES_",
+                },
+                'paging': true,
+                'lengthChange': false,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false,
+                "ajax": {
+                    "url": "/Home/Listar",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "descricao_produto" },
+                    { "data": "descricao_rua" },
+                    { "data": "descricao_column" },
+                    { "data": "descricao_nivel" },
+                    { "data": "descricao_endereco" },
+                    { "data": "quantidade" },
+                    { "data": "vencimento" },
+                ]
+            });
+        });
+    </script>
+}

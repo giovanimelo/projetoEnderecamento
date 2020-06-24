@@ -1,0 +1,85 @@
+﻿@model IEnumerable<WebService.Models.Usuario>
+
+@{
+
+    Layout = "~/Views/Shared/_mainView.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+
+<body>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Lista de Usuarios</h3>
+                        <div class="box-body">
+                            <table id="TabelaUsuarios" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.id_usuario)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.no_nome)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.no_sexo)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.no_email)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.num_telefone)
+                                        </th>
+
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#TabelaUsuarios').DataTable({
+                "language": {
+                    "search": "Procurar",
+                    "paginate": { "previous": "Anterior", "next": "Próximo" },
+                    "info": "Exibindo página _PAGE_ de _PAGES_",
+                },
+                'paging': true,
+                'lengthChange': false,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false,
+                "ajax": {
+                    "url": "/usuarios/Listar",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "id_usuario" },
+                    { "data": "no_nome" },
+                    { "data": "no_sexo" },                
+                    { "data": "no_email" },
+                    { "data": "num_telefone" },
+                 
+                ]
+            });
+        });
+    </script>
+}

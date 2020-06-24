@@ -1,0 +1,87 @@
+﻿@model IEnumerable<WebService.Models.Endereco>
+
+@{
+
+    Layout = "~/Views/Shared/_mainView.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <div class="form-horizontal">
+                            <h4 class="box-title">Lista de Endereços</h4>
+                            <h3>
+                                @*@Html.ActionLink("Adicionar novo", "Create", "Endereco", new { @class = "btn btn-success" })*@
+                            </h3>
+                            <div class="box-body">
+                                <table id="tabelaPadrao" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>
+                                                @Html.DisplayNameFor(model => model.descricao)
+                                            </th>
+                                            <th>
+                                                @Html.DisplayNameFor(model => model.rua.nome_rua)
+                                            </th>
+                                            <th>
+                                                @Html.DisplayNameFor(model => model.coluna.nome_coluna)
+                                            </th>
+                                            <th>
+                                                @Html.DisplayNameFor(model => model.nivel.numero_nivel)
+                                            </th>
+                                            <th>
+                                                @Html.DisplayNameFor(model => model.led.numero)
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#tabelaPadrao').DataTable({
+                "language": {
+                    "search": "Procurar",
+                    "paginate": { "previous": "Anterior", "next": "Próximo" },
+                    "info": "Exibindo página _PAGE_ de _PAGES_",
+                },
+                'paging': true,
+                'lengthChange': false,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false,
+                "ajax": {
+                    "url": "/endereco/Listar",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+
+                    { "data": "descricao" },
+                    { "data": "rua.nome_rua" },
+                    { "data": "coluna.nome_coluna" },
+                    { "data": "nivel.numero_nivel" },
+                    { "data": "led.numero" },                
+                ]
+            });
+        });
+    </script>
+}

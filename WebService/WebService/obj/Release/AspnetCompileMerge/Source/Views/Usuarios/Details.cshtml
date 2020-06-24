@@ -1,0 +1,58 @@
+﻿@model WebService.Models.Usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.no_nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.num_telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.num_telefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_senha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_usuario }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

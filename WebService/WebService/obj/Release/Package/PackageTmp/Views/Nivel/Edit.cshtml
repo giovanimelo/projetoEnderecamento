@@ -1,0 +1,57 @@
+﻿@model WebService.Models.Nivel
+
+@{
+
+    Layout = "~/Views/Shared/_mainView.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <section class="content">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+
+                    <div class="form-horizontal">
+                        <h4>Editar</h4>
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.id_nivel)
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.id_nivel, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.id_nivel, new { htmlAttributes = new { @disabled = "true", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.id_nivel, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.numero_nivel, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.numero_nivel, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.numero_nivel, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="box-footer">
+                            <div class="pull-left">
+                                @Html.ActionLink("Voltar", "Index")
+                            </div>
+
+                            <button type="submit" class="btn btn-success pull-right">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
